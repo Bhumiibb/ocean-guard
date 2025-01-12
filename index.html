@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Guard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="title-effect">🌊 Ocean Guard</h1>
+            <p>Together, we can preserve our oceans and water bodies.</p>
+            <a href="#report" class="btn-primary">Report Pollution</a>
+        </div>
+    </header>
+
+    <!-- Pollution Reporting Section -->
+    <section id="report" class="section report-section">
+        <h2>📌 Report Pollution</h2>
+        <p>Fill out the form below to report pollution and help protect our planet:</p>
+        <form action="submit_report.php" method="POST" class="form">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter the location" required>
+
+            <label for="pollution_type">Type of Pollution:</label>
+            <input type="text" id="pollution_type" name="pollution_type" placeholder="e.g., Plastic Waste, Oil Spill" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" placeholder="Provide more details" required></textarea>
+
+            <button type="submit" class="btn-secondary">Submit Report</button>
+        </form>
+    </section>
+
+    <!-- Awareness Section -->
+    <section class="section awareness-section">
+        <h2>🌟 Raise Awareness</h2>
+        <p>Simple actions you can take to preserve our oceans:</p>
+        <div class="tips">
+            <div class="tip">
+                <h3>🚯 Avoid Plastics</h3>
+                <p>Reduce the use of single-use plastics and dispose of waste responsibly.</p>
+            </div>
+            <div class="tip">
+                <h3>🌱 Support Clean-ups</h3>
+                <p>Participate in or organize community clean-up initiatives.</p>
+            </div>
+            <div class="tip">
+                <h3>💧 Save Water</h3>
+                <p>Conserve water and avoid polluting local water sources.</p>
+            </div>
+            <div class="tip">
+                <h3>📢 Spread the Word</h3>
+                <p>Educate others about the importance of protecting water bodies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>love our mother earth ❤️ | © 2025 Ocean Guard</p>
+    </footer>
+</body>
+</html>

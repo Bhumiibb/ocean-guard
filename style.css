@@ -1,0 +1,150 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #004d40;
+    background-color: #e0f7fa;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?ocean') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: title-fade-in 2s ease-in-out;
+}
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.title-effect {
+    color: red; /* Title in red */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.btn-primary {
+    text-decoration: none;
+    background: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+.btn-primary:hover {
+    background: #005f87;
+    transform: scale(1.05);
+}
+
+/* Section Styles */
+.section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+.report-section {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+    text-align: left;
+    animation: slide-in 1.5s ease-in-out;
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+}
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #b2dfdb;
+    border-radius: 5px;
+}
+form button {
+    background: #0077b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+form button:hover {
+    background: #005f87;
+    transform: scale(1.1);
+}
+
+/* Awareness Section */
+.awareness-section .tips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.awareness-section .tip {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+    animation: fade-in 2s ease-in-out;
+}
+.awareness-section .tip h3 {
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #004d40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animations */
+@keyframes title-fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
